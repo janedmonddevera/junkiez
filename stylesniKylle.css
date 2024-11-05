@@ -1,22 +1,14 @@
 .iconContainer {
-
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
-
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
-    
-}
-@media screen and (max-width:900px){
-  .iconContainer {
-   
-    margin-bottom: 10px;
-    
 }
 
+.imgLogo {
+  width: 35%;
+  height: auto;
 }
+
 .mainContainer {
   display: flex;
   padding: 0 15% !important;
@@ -25,12 +17,7 @@
 }
 
 .mainContainer .firstSection {
-
   flex: 2;
-
-    flex: 2;
-    overflow: hidden;
-
 }
 
 .mainContainer .secondSection {
@@ -38,23 +25,12 @@
 }
 
 .imgBody {
-
   width: 100%;   
   height: auto;  
   object-fit: cover;
   object-position: center;
   aspect-ratio: 1/1;
 }
-
-    width: 100%;   
-    height: auto;  
-    object-fit: cover;
-    object-position: center;
-    aspect-ratio: 1/1;
-   
-  }
-
-
 
 .secondSection {
   display: flex;
@@ -145,7 +121,7 @@
   aspect-ratio: 5/7; */
 }
 
-ul {
+.unOrdered  {
   display: flex;
   flex-wrap: wrap;
   padding: 40px 15% !important;
@@ -153,14 +129,14 @@ ul {
   background-color: #0D2B1D; 
 }
 
-li {
+.ListIto{
   height: 60vh;
   flex-grow: 1;
   display: block;
   position: relative;
 }
 
-li h3 { 
+.ListIto h3 { 
   position: absolute;
   bottom: 10px;
   left: 0;
@@ -201,18 +177,11 @@ li h3 {
     margin-bottom: 30px;
   }
 
-
   .imgLogo {
     width: 90%;
     height: auto;
-
-  .imgBody3 {
-    object-fit: cover;
-    object-position: center;
-    width:100%;height:auto;
-    aspect-ratio: 7/5;
-    
   }
+
   .mainContainer {
     flex-direction: column;
     padding: 0 5% !important;
@@ -248,7 +217,7 @@ li h3 {
       display: none; /* For Chrome, Safari, and Opera */
   }
 
-  ul {
+  .unOrdered  {
       display: flex;
       flex-wrap: nowrap;
       gap: 10px; /* Consistent gap between items */
@@ -256,7 +225,7 @@ li h3 {
       margin: 0 !important;
   }
   
-  li {
+  .ListIto {
       height: 60vh;
       flex: 0 0 auto;
       width: 80vw;
@@ -265,7 +234,7 @@ li h3 {
       justify-content: center;
   }
   
-  li h3 { 
+  .ListIto h3 { 
       position: absolute;
       bottom: 10px;
       left: 0;
@@ -304,5 +273,253 @@ li h3 {
 .videoLink {
   display: flex;
   justify-content: center;
+  /* margin-bottom: 40px; */
+  background-color: #6b8f71;
+  padding: 80px 0;
 }
 
+.videoHeader {
+  position: relative;
+}
+
+.videoHeader .videoHeaderContent {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  right: 0;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: clamp(1rem, 2.5vw + 0.5rem, 24px); /* Adjusts font size based on viewport width */
+}
+
+.videoHeaderContent h1 {
+  font-size: clamp(1.5rem, 3vw + 1rem, 24px); /* Maximum font size of 24px */
+}
+
+.videoHeaderContent h4 {
+  font-size: clamp(1rem, 2vw + 0.5rem, 16px); /* Maximum font size of 16px */
+}
+
+.ytLinkAttachment {
+  width: 100%; 
+  height: 550px; 
+  padding: 0 15% !important;
+  padding: 0; 
+  overflow: hidden;
+}
+
+.imgHeader {
+  width: 100%;
+  height: auto;
+  /* padding: 0 15% !important; */
+  aspect-ratio: 7/4;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  .ytLinkAttachment {
+    padding: 0 5% !important;
+  }
+
+  .imgHeader {
+    aspect-ratio: 5/7;
+  }
+}
+
+
+
+/* CSS FOR INFOGRAPHICS.PHP */
+.letterEContainer {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.imgHeaderLetterE {
+  width: 100%;
+  max-height: 100vh; /* Limits the height to 60% of the viewport height */
+  object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+  object-position: center;
+  aspect-ratio: 7/5;
+}
+
+.letterEContainerContent, .letterEContainerContent2 {
+  display: flex;
+  padding: 40px 15% !important;
+  gap: 40px;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.letterEContainerContent2 .firstSection {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 20px;
+}
+
+.letterEContainerContent2 .secondSection {
+  text-align: center;
+}
+
+.letterEContainerContent3 {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  padding: 60px 0;
+  background-color: #345635;
+}
+
+.letterEContainerContent .firstSection, .letterEContainerContent .secondSection {
+  flex: 1;
+  gap: 20px;
+}
+
+.pie-chart {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #3498db 0% 57%,    /* 57% slice */
+    #e74c3c 57% 75%,   /* 18% slice */
+    #f1c40f 75% 88%,   /* 13% slice */
+    #2ecc71 88% 100%   /* 12% slice */
+  );
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.pie-chart .label {
+  position: absolute;
+  right: 25px;
+  color: #ffffff;
+}
+
+.secondSection {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.letterEContainerContent2 {
+  background-color: #AEC3B0;
+}
+
+
+.ring-chart {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    blue 0% 54.81%,  /* 54.81% slice in red */
+    red 54.81% 100% /* Remaining slice in blue */
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Inner circle to create the ring effect */
+.ring-chart::before {
+  content: '';
+  width: 140px;  /* Adjust to control ring thickness */
+  height: 140px;
+  background-color: white; /* Color of the inner circle */
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.center-label {
+  position: relative;
+  z-index: 2;
+  font-size: 1.5em;
+  color: #333;
+  font-weight: bold;
+}
+
+.letterEContainerContent3 .firstSection {
+  flex: 1;
+}
+
+.letterEContainerContent3 .secondSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.letterEContainerContent3 {
+  align-items: flex-start;
+  color: rgb(219, 219, 219);
+}
+
+.largeTitle {
+  font-size: clamp(1.5rem, 3vw + 1rem, 60px); /* Maximum font size of 24px */
+  font-weight: bold;
+}
+
+.headerLetterE, .largeTitle {
+  font-size: clamp(1.5rem, 3vw + 1rem, 60px); /* Maximum font size of 24px */
+  font-weight: bold;
+  text-align: center;
+}
+
+.imgContent3 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 5/7;
+}
+
+.imgContent3Text {
+  font-size: clamp(1rem, 2vw + 0.5rem, 16px); /* Maximum font size of 16px */
+
+}
+
+@media only screen and (max-width: 768px) {
+  .imgHeaderLetterE {
+    aspect-ratio: 5/7;
+  }
+  .letterEContainerContent {
+    flex-direction: column;
+  }
+  .sources {
+    text-align: center;
+  }
+
+  .letterEContainerContent2 {
+    flex-direction: column;
+  }
+
+  .letterEContainerContent2 .firstSection .ringText {
+    text-align: center;
+  }
+
+  .letterEContainerContent3 {
+    flex-direction: column;
+  }
+  .letterEContainerContent, .letterEContainerContent2 {
+    padding: 40px 5% !important;
+  } 
+  .letterEContainerContent3 .secondSection {
+    padding: 0 5% !important;
+  }
+}
