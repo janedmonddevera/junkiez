@@ -2,8 +2,15 @@
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+    
 }
-
+@media screen and (max-width:900px){
+  .iconContainer {
+   
+    margin-bottom: 10px;
+    
+}
+}
 .mainContainer {
     display: flex;
     padding: 0 15% !important;
@@ -13,6 +20,7 @@
 
 .mainContainer .firstSection {
     flex: 2;
+    overflow: hidden;
 }
 
 .mainContainer .secondSection {
@@ -25,7 +33,9 @@
     object-fit: cover;
     object-position: center;
     aspect-ratio: 1/1;
+   
   }
+
 
 .secondSection {
     display: flex;
@@ -71,6 +81,7 @@
     object-position: center;
     width:100%;height:auto;
     aspect-ratio: 7/5;
+    
   }
 
   .threeColumnImgContainer {

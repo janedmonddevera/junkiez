@@ -9,12 +9,13 @@
 
         get_header();
 ?>
-    <div class="loadingScreen">
-      <h1>Loading</h1>
-    </div>
+   
 
     
     <div class="intro-home1">
+    <div class="iconContainer">
+    <img class="h-25 w-25" src="<?php echo get_template_directory_uri(); ?>/assets/images/junkiez.png" alt="">
+</div>
     <div id="introduction" class="intro d-flex justify-content-center align-items-center">
   
 
@@ -170,18 +171,6 @@
    
 
 
-</div>
-      <script>
-       const brand = document.querySelector('.navbar-brand');
-        window.onload = 	brand.classList.add('not-hidden');
-
-        var loadingScreen = document.querySelector(".loadingScreen");
-
-window.addEventListener('load', function() {
-  console.log('nice');
-  loadingScreen.classList.add('d-none');
-})
-      </script>
 <?php
 
     get_footer();
