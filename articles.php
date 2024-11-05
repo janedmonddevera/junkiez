@@ -13,9 +13,7 @@ Template Name: Articles Template
     
 </style>
     <div class="intro-sadsasd">
-    <div class="iconContainer">
-    <img class="h-25 w-25" src="<?php echo get_template_directory_uri(); ?>/assets/images/junkiez.png" alt="">
-</div>
+
     <div id="introduction" class="intro">
   
 
@@ -161,14 +159,16 @@ their households despite being very vocal on supporting for environment.
     <div class="h-100 d-flex justify-content-center align-items-center content-map" style="min-height: 300px;"> <!-- Added min-height for vertical centering -->
         <div class=" p-4 d-block  w-md-25 find-junk">
         <p class="text-center h5 md-h3 text-light font-weight-bolder"> <!-- Added text-center for horizontal alignment -->
-        FIND A JUNK SHOP NEAR YOU
+        Trash to Cash
         
       
         </p>
         <div class="d-flex justify-content-center align-items-center">
       
         
-        <button class="button-57" role="button"><span class="text">Start your Journey</span><span>Find Junkshop</span></button>
+        <a href="<?php 
+                    echo home_url() ?>/map"> <button class="button-57" role="button"><span class="text">Trash</span><span>Cash</span></button>
+        </a>
         </div>
         </div>
     </div>

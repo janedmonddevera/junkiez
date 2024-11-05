@@ -70,3 +70,11 @@ wp_head();
   </div>
 </div>
 </nav>
+
+<div class="iconContainer">
+
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/junkiez.png" alt="" class="imgLogo">
+
+  
+
+</div>
