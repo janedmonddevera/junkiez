@@ -1,4 +1,9 @@
 .iconContainer {
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
@@ -10,24 +15,37 @@
     margin-bottom: 10px;
     
 }
+
 }
 .mainContainer {
-    display: flex;
-    padding: 0 15% !important;
-    gap: 40px;
+  display: flex;
+  padding: 0 15% !important;
+  gap: 40px;
 
 }
 
 .mainContainer .firstSection {
+
+  flex: 2;
+
     flex: 2;
     overflow: hidden;
+
 }
 
 .mainContainer .secondSection {
-    flex: 1;
+  flex: 1;
 }
 
 .imgBody {
+
+  width: 100%;   
+  height: auto;  
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1/1;
+}
+
     width: 100%;   
     height: auto;  
     object-fit: cover;
@@ -37,44 +55,156 @@
   }
 
 
+
 .secondSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .secondSectionFirstImg .imgBody1 {
-    width: 100%;   
-    height: auto;  
-    object-fit: cover;
-    object-position: center;
-    aspect-ratio: 7/5;
-  }
+  width: 100%;   
+  height: auto;  
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 7/5;
+}
 
 .secondSectionSecondImg .imgBody2 {
-    width: 100%;   
-    height: auto;  
-    object-fit: cover;
-    object-position: center;
-    aspect-ratio: 7/5;
+  width: 100%;   
+  height: auto;  
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 7/5;
+}
+
+.wholeImgContainer {
+  margin: 40px 0;
+  position: relative;
+}
+
+.wholeImgContainer .floatingText {
+  text-align: center;
+  margin-bottom: 0 !important;
+  
+  /* Responsive font size */
+  font-size: clamp(2rem, 4vw + 1rem, 4rem); /* Adjusts font size based on viewport width */
+}
+
+
+.imgBody3 {
+  object-fit: cover;
+  object-position: center;
+  width:100%;height:auto;
+  aspect-ratio: 7/5;
+}
+
+.threeColumnImgContainer {
+  /* display: flex;
+  padding: 40px 15% !important;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+  background-color: #0D2B1D; */
+}
+
+/* .threeColumnImgContainer h3 {
+  color: white;
+  text-align: center;
+} */
+
+.threeColumnImgContainer .firstSection,   
+.threeColumnImgContainer .thirdSection,   
+.threeColumnImgContainer .secondSection  {
+  /* flex: 1; */
+}
+
+.threeColumnImgContainer .firstSection .imgBody4 {
+  /* object-fit: cover;
+  object-position: center;
+  width:100%;
+  height:auto;
+  aspect-ratio: 5/7;
+  padding: 0 50px 0 0; */
+}
+
+.threeColumnImgContainer .secondSection .imgBody4 {
+  /* object-fit: cover;
+  object-position: center;
+  width:100%;
+  height:auto;
+  aspect-ratio: 5/7;
+  padding: 0 30px 0 0; */
+}
+
+.threeColumnImgContainer .thirdSection .imgBody4 {
+  /* object-fit: cover;
+  object-position: center;
+  width:100%;
+  height:auto;
+  aspect-ratio: 5/7; */
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 15% !important;
+  gap: 40px;
+  background-color: #0D2B1D; 
+}
+
+li {
+  height: 60vh;
+  flex-grow: 1;
+  display: block;
+  position: relative;
+}
+
+li h3 { 
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  word-wrap: break-word; /* Ensure long words wrap */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: add a background for contrast */
+}
+
+.imgBody4, .imgBody5, .imgBody6 {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  /* aspect-ratio: 5/7; */
+}
+
+.imgBody4 {
+  aspect-ratio: 4/7;
+}
+.imgBody5 {
+  aspect-ratio: 5/7;
+}
+.imgBody6 {
+  aspect-ratio: 7/7;
+}
+
+/* MOBILE RESPONSIVE */
+/* 
+  Issues:
+  1. No padding on right of last image (Scrollable)
+
+*/
+@media only screen and (max-width: 768px) {
+  .iconContainer {
+    margin-bottom: 30px;
   }
 
-  .wholeImgContainer {
-    margin: 40px 0;
-    position: relative;
-  }
 
-  .wholeImgContainer .floatingText {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    color: white;
-    font-size: 90px;
-  }
+  .imgLogo {
+    width: 90%;
+    height: auto;
 
   .imgBody3 {
     object-fit: cover;
@@ -83,49 +213,96 @@
     aspect-ratio: 7/5;
     
   }
+  .mainContainer {
+    flex-direction: column;
+    padding: 0 5% !important;
 
-  .threeColumnImgContainer {
-    display: flex;
-    padding: 40px 15% !important;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-    background-color: #0D2B1D;
   }
 
-  .threeColumnImgContainer h3 {
-    color: white;
-    text-align: center;
+  .mainContainer .secondSection {
+    gap: 40px;
   }
 
-  .threeColumnImgContainer .firstSection,   
-  .threeColumnImgContainer .thirdSection,   
-  .threeColumnImgContainer .secondSection  {
-    flex: 1;
+  .mainContainer .firstSection h1 {
+    text-align: right !important;
+  }
+  
+  .mainContainer .secondSection .secondSectionFirstImg h1 {
+    text-align: left !important;
+  }
+  .mainContainer .secondSection .secondSectionSecondImg h1 {
+    text-align: right !important;
   }
 
-  .threeColumnImgContainer .firstSection .imgBody4 {
-    object-fit: cover;
-    object-position: center;
-    width:100%;
-    height:auto;
-    aspect-ratio: 5/7;
-    /* padding: 0 50px; */
-  }
-
-  .threeColumnImgContainer .secondSection .imgBody4 {
-    object-fit: cover;
-    object-position: center;
-    width:100%;
-    height:auto;
-    aspect-ratio: 5/7;
-    /* padding: 0 30px; */
-  }
-
-  .threeColumnImgContainer .thirdSection .imgBody4 {
-    object-fit: cover;
-    object-position: center;
-    width:100%;
-    height:auto;
+  .imgBody3 {
     aspect-ratio: 5/7;
   }
+
+  .scroll-container {
+    overflow-x: scroll; /* Enables horizontal scroll */
+    background-color: #0D2B1D; /* Background color */
+    scrollbar-width: none; /* For Firefox */
+  }
+
+  .scroll-container::-webkit-scrollbar {
+      display: none; /* For Chrome, Safari, and Opera */
+  }
+
+  ul {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 10px; /* Consistent gap between items */
+      padding: 40px 5% !important; /* Outer padding for the container */
+      margin: 0 !important;
+  }
+  
+  li {
+      height: 60vh;
+      flex: 0 0 auto;
+      width: 80vw;
+      position: relative;
+      display: flex;
+      justify-content: center;
+  }
+  
+  li h3 { 
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      color: white;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .imgBody4, .imgBody5, .imgBody6 {
+      max-height: 100%;
+      min-width: 100%;
+      object-fit: cover;
+      vertical-align: bottom;
+  }
+  
+  .imgBody4 {
+      aspect-ratio: 5/7;
+  }
+  
+  .imgBody5 {
+      aspect-ratio: 5/7;
+  }
+  
+  .imgBody6 {
+      aspect-ratio: 5/7;
+  }
+
+}
+
+
+
+/* CSS FOR VIDEO.PHP */
+
+.videoLink {
+  display: flex;
+  justify-content: center;
+}
+
