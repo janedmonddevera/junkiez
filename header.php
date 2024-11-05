@@ -78,3 +78,5 @@ wp_head();
   
 
 </div>
+
+</div>
