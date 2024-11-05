@@ -1,5 +1,22 @@
 <?php
 
+function theme_support(){
+    add_theme_support('title-tag');
+} 
+    add_action('after_setup_theme','theme_support');
+
+
+function greenermanila_menus(){
+    $locations = array(
+
+        'primary' => "sticky-navbar",
+        'footer' => "footer items"
+
+    );
+    register_nav_menus($locations);
+}
+
+add_action('init','greenermanila_menus');
 function greenermanila_register_styles(){
 
     $version = wp_get_theme()->get('Version');

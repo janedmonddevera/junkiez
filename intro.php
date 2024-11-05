@@ -9,11 +9,13 @@ Template Name: Intro Template
 
         get_header();
 ?>
- <div class="loadingScreen">
-      <h1>Loading</h1>
-    </div>
 
-    <div class="intro-home">
+
+
+    <div class="intro-home1">
+    <div class="iconContainer">
+    <img class="h-md-25 w-md-25 h-50 w-50" src="<?php echo get_template_directory_uri(); ?>/assets/images/junkiez.png" alt="">
+</div>
     <div id="introduction" class="intro">
   
 
@@ -22,13 +24,13 @@ Template Name: Intro Template
     <div class="col-12 col-md-12 m-0 p-0"> <!-- 30% width on larger screens, full width on small screens -->
         <div class=" text-dark p-md-5 p-3 pt-5 text-content h-100 d-flex justify-content-center align-items-center">
           
-        <p class="text-light h2 pt-md-4 pt-3">Our Duty as a Citizen</p>
+        <p class="text-light h2 pt-md-4 pt-3">Be Mindful</p>
         </div>
     </div>
-    <div class="h-100 d-flex justify-content-center align-items-center">
-    <div class="col-12 col-md-8 m-0 p-0  p-md-5  "> <!-- 70% width on larger screens, full width on small screens -->
+    <div class=" d-flex justify-content-center align-items-center h-25">
+    <div class="col-12 col-md-5 m-0 p-0  p-md-5 h-100  "> <!-- 70% width on larger screens, full width on small screens -->
         
-            <img class="intro-image " src="<?php echo get_template_directory_uri(); ?>/assets/images/DSC09663.jpg;" alt="">
+            <img class="intro-image h-100 w-100 " src="<?php echo get_template_directory_uri(); ?>/assets/images/DSC09415.jpg;" alt="" style="aspect-ration:7/5;">
     
     </div>
     </div>
@@ -41,27 +43,12 @@ Template Name: Intro Template
     As more products are created, more material waste is being disposed of in all households in Manila. A clear majority of improper waste is credited to households all over the metropolitan area of NCR.
             </p>
 
-            <div class="row z-n1 m-0 p-0">
-                <div class="col-12 col-md-6 m-0 p-0">
-                    <img class="w-100 h-auto p-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/DSC09663.jpg;" alt="ss">
-                </div>
-                <div class="col-12 col-md-6 m-0 p-0 d-md-block d-none">
-                    <img class="w-100 h-auto p-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/DSC09663.jpg;" alt="ss">
-                </div>
-            </div>
         
     <p class="text-dark pb-2 ">
    
 During 2020, Metro Manila has produced 3,466,469 metric tons of material waste in that year alone.
     </p>
-    <div class="row z-n1 m-0 p-0">
-                <div class="col-12 col-md-6 m-0 p-0">
-                    <img class="w-100 h-auto p-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/DSC09663.jpg;" alt="ss">
-                </div>
-                <div class="col-12 col-md-6 m-0 p-0 d-md-block d-none">
-                    <img class="w-100 h-auto p-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/DSC09663.jpg;" alt="ss">
-                </div>
-            </div>
+   
           
 <p class="text-dark pb-2 ">
 It is our duty to properly dispose of these waste if we want a better place for ourselves and the future generation so let’s aim for a greener Manila.
@@ -141,17 +128,7 @@ It is our duty to properly dispose of these waste if we want a better place for 
 
 </div>
 
-<script>
-       const brand = document.querySelector('.navbar-brand');
-        window.onload = 	brand.classList.add('not-hidden');
 
-        var loadingScreen = document.querySelector(".loadingScreen");
-
-window.addEventListener('load', function() {
-  console.log('nice');
-  loadingScreen.classList.add('d-none');
-})
-      </script>
    
 <?php
 

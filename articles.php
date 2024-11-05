@@ -13,6 +13,9 @@ Template Name: Articles Template
     
 </style>
     <div class="intro-sadsasd">
+    <div class="iconContainer">
+    <img class="h-25 w-25" src="<?php echo get_template_directory_uri(); ?>/assets/images/junkiez.png" alt="">
+</div>
     <div id="introduction" class="intro">
   
 
@@ -46,7 +49,7 @@ their households despite being very vocal on supporting for environment.
     </div>
     <div class="col-12 col-md-6 m-0 p-md-5 text-content"> 
         <div class="text-white ">
-            <img class="intro-image " src="<?php echo get_template_directory_uri(); ?>/assets/images/DSC09663.jpg;" alt="">
+            <img class="intro-image " src="<?php echo get_template_directory_uri(); ?>/assets/images/DSC00016.jpg;" alt="">
         </div>
     </div>
 </div>
@@ -61,9 +64,9 @@ their households despite being very vocal on supporting for environment.
              <div class="row z-n1 m-0 p-0">
         
   
-    <div class="col-12 col-md-6 m-0 p-md-5 text-content"> 
+    <div class="col-12 col-md-6 m-0 p-md-5 text-content d-md-block d-none"> 
         <div class="text-white ">
-            <img class="intro-image " src="<?php echo get_template_directory_uri(); ?>/assets/images/DSC09663.jpg;" alt="">
+            <img class="intro-image " src="<?php echo get_template_directory_uri(); ?>/assets/images/DSC00016.jpg;" alt="">
         </div>
     </div>
     <div class="col-12 col-md-6 m-0 p-md-5 text-content">
@@ -176,10 +179,7 @@ their households despite being very vocal on supporting for environment.
 
 
 </div>
-      <script>
-       const brand = document.querySelector('.navbar-brand');
-        window.onload = 	brand.classList.add('not-hidden');
-      </script>
+  
 <?php
 
     get_footer();
