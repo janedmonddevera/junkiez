@@ -12,13 +12,6 @@ Template Name: Home Template
 
 
 
-<div class="iconContainer">
-
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/junkiez.png" alt="" class="imgLogo">
-
-    <img class="h-25 w-25" src="<?php echo get_template_directory_uri(); ?>/assets/images/junkiez.png" alt="">
-
-</div>
 
 <div class="mainContainer">
     <div class="firstSection">
