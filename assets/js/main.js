@@ -41,3 +41,25 @@ function openNav() {
 	console.log('nice');
 	loadingScreen.classList.add('d-none');
   })
+
+var lists = document.querySelectorAll(".nav-item-lists");
+
+
+lists.forEach(function(list) {
+
+  var arrow = list.querySelector(".arrow");
+  
+
+  function onMouseEnter() {
+    arrow.classList.remove('d-none');
+  }
+
+
+  function onMouseExit() {
+    arrow.classList.add('d-none');
+  }
+
+
+  list.addEventListener('mouseenter', onMouseEnter);
+  list.addEventListener('mouseleave', onMouseExit);
+});

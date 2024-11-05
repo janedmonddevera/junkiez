@@ -17,27 +17,38 @@ wp_head();
 </head>
 <body  class="h-100">
   
-  
+<div class="loadingScreen">
+      <h1>Loading</h1>
+    </div>
 <nav class="navbar navbar-light position-sticky z-3">
-  <img class="navbar-brand hidden" width="150" height="auto" src="<?php echo get_template_directory_uri(); ?>/assets/images/junkiez.png;" alt="">
+<a href="/wordpress/home" class="navlink"><img class="navbar-brand hidden"  width="150" height="auto" src="<?php echo get_template_directory_uri(); ?>/assets/images/junkiez.png;" alt=""></a> 
 
-  <!--  <a class="navbar-brand hidden" href="#">JunkieZ</a>-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class=" align-items-end justify-content-end text-dark" onclick="openNav()">Menu</span>
+        <span class=" align-items-end justify-content-end text-dark " onclick="openNav()">Menu</span>
     </button>
 
     <div id="mySidenav" class="sidenav ">
-    <img class="title r-md-25px p-4" width="200" height="auto" src="<?php echo get_template_directory_uri(); ?>/assets/images/junkiez.png;" alt="">
+    <a href="/wordpress/home"><img class="title r-md-25px p-4" width="200" height="auto" src="<?php echo get_template_directory_uri(); ?>/assets/images/junkiez.png;" alt=""></a>
    
       
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="p-4 m-4">
+    <div class="p-md-4 m-md-4 p-1 m-2">
+        <?php
 
-        <a href="/wordpress/6-2" class="text-menu">HOME</a>
-        <a href="/wordpress/advocacy" class="text-menu">ADVOCACY</a>
-        <a href="#" class="text-menu">START YOUR JOURNEY</a>
-        <a href="#" class="text-menu">CONTACT US</a>
-
+        wp_nav_menu(
+          array(
+            'menu' => 'primary',
+            'container' => '',
+            'theme_location' => 'primary'
+          )
+          );
+        ?>
+        <!--
+        <a href="/6-2/" class="text-menu">Intro</a>
+        <a href="/wordpress/articles" class="text-menu">Article</a>
+        <a href="/wordpress/advocacy" class="text-menu">About Us & Contact Us</a>
+        <a href="#" class="text-menu">Video</a>
+        -->
  
  
 
